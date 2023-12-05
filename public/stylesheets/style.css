@@ -20,4 +20,27 @@ body {
   width: 60vw;
   min-height: 80vh;
   background-color: #00B7FF;
+  border: 3px solid black;
+  box-shadow: 3px 3px 1px 1px gray;
+  padding: 8px;
+}
+
+.message-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(185, 238, 254);
+  padding: 8px;
+  border: 2px solid black;
+}
+
+.username {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.date-posted {
+  align-self: flex-end;
+  font-size: 0.7rem;
+  font-weight: lighter;
 }
