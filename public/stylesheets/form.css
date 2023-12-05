@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
 .main {
   display: flex;
   flex-direction: column;
@@ -16,34 +12,29 @@ body {
   margin-top: 16px;
 }
 
-.message-board {
+.message-form {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   width: 60vw;
   min-height: 80vh;
   background-color: #00B7FF;
   border: 3px solid black;
   box-shadow: 3px 3px 1px 1px gray;
-  padding: 8px;
+  padding: 16px;
 }
 
-.message-block {
+.message-form > div:nth-child(2) {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  background-color: rgb(185, 238, 254);
+  gap: 2px;
+}
+
+.message-form input, .message-form textarea {
+  padding: 4px;
+}
+
+button {
+  width: 100px;
   padding: 8px;
-  border: 2px solid black;
-}
-
-.user {
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-.date-posted {
-  align-self: flex-end;
-  font-size: 0.7rem;
-  font-weight: lighter;
 }
