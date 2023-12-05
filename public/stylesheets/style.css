@@ -17,6 +17,9 @@ body {
 }
 
 .message-board {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   width: 60vw;
   min-height: 80vh;
   background-color: #00B7FF;
