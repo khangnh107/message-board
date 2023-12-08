@@ -4,6 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+// Required for adaptable.io (Hosting Provider) to work
+const port = process.env.PORT || 3000;
+
 var indexRouter = require('./routes/index');
 
 var app = express();
